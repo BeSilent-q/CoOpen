@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coopen.coopen.Controller">
+   <children>
+      <Text layoutX="24.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main app directory:" wrappingWidth="121.17578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnMainAppBrowse" layoutX="497.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleMainAppBrowseClicked" text="Browse">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSecondaryAppBrowse" layoutX="497.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleSecondaryAppBrowseClicked" text="Browse">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text layoutX="24.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Secondary app directory:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mainAppDir" layoutX="24.0" layoutY="55.0" prefHeight="30.0" prefWidth="466.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="secondaryAppDir" layoutX="24.0" layoutY="104.0" prefHeight="30.0" prefWidth="466.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnSave" layoutX="24.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleSaveButtonClicked" prefHeight="30.0" prefWidth="91.0" text="Save config">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="stateLabel" layoutX="119.0" layoutY="141.0" prefHeight="50.0" prefWidth="441.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="minimizeCheckBox" layoutX="24.0" layoutY="183.0" mnemonicParsing="false" text="Run minimized" />
+      <Label fx:id="restartLabel" layoutX="145.0" layoutY="1.0" prefHeight="27.0" prefWidth="295.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

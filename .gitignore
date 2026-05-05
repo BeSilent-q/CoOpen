@@ -1,0 +1,23 @@
+#Maven / Java build#
+target/
+build/
+
+#IntelliJ IDEA#
+.idea/
+*.iml
+
+#Eclipse#
+.classpath
+.project
+.settings/
+
+#NetBeans#
+/nbproject/
+/nbbuild/
+/dist/
+
+#VS Code#
+.vscode/
+
+#Mac#
+.DS_Store
